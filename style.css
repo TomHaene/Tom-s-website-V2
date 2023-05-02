@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'Sans-serif';
+    /*border: 2px solid lime*/
+}
+
+
+
+/*-----------------Nav section-----------------------*/ 
+nav{
+    height:80px;
+    background-color: #181a1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px)/2);
+    padding-left: 20px; /*added this myself*/
+}  
+
+nav a, .logo{
+    text-decoration: none;
+    padding: 0 1.5rem;
+    color:#fff;
+}
+
+nav a{
+    letter-spacing: 2px;
+}
+
+nav .logo{
+    font-size: large;
+    color: #e44e58;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+
+/*-----------------Nav section-----------------------*/ 
+
+
+
+
+
+
+
+/*-----------------Hero section-----------------------*/ 
+.hero{
+    background-color: #181a1b;
+    color: #fff;
+    
+    
+}
+
+.hero-container{
+    height:95vh;
+    padding:3rem calc((100vw - 1300px)/2);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-container p{
+    margin-top:23px;
+    font-size: smaller;
+    line-height: 1.6;
+    font-size: calc(14px + 0.5vw);
+    text-align: center;
+    
+
+}
+
+.hero h1{
+    font-size: calc(1.2rem + 3.2vw);
+}
+
+.hero h1 span{
+    color: #e44e58;
+}
+
+
+
+.button-container{
+    margin-top: 30px;
+}
+
+.button-container input{
+    margin: 0 10px 0 10px;;
+}
+
+/*---------------- Hero section-----------------------*/ 
+
+
+
+
+
+
+
+
+/*-----------------About me section-----------------------*/ 
+.about-container{
+    background-color: #002333;
+    color: #fff;
+    height:70vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.leftdivision{
+    flex:1;
+}
+
+.rightdivision{
+    flex:1;
+}
+
+
+
+.leftdivision h3{
+    position: absolute;
+    top:35px;
+    left:35px;
+}
+
+.leftdivision p{
+    position: absolute;
+    top:70px;
+    left:35px;
+    width:30vw;  
+}
+
+.aboutmewrapper{
+    margin-top: 80px;
+    margin-left: 60px;
+    position: relative;
+}
+
+/*-----------------About me section-----------------------*/ 
+
+
+
+
+
+
+
+/*-----------------Skills section-----------------------*/ 
+.skills{
+    background-color: #181a1b;
+    color: #fff;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills h1{
+    margin-left: 40px;
+    margin-top: 40px;
+   font-size: x-large;
+}
+
+.cardscontainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.cardscontainer div{
+    flex: 0 0 300px;
+    height:22rem;
+    text-align: center;
+    background-color: #2e3031;;
+}
+
+
+.cardscontainer h3{
+    margin-top: 85px;
+}
+
+.cardscontainer span{
+    display: block;
+    line-height: 0.6;
+    margin-top: 25px;
+}
+
+
+/*-----------------Skills section-----------------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Projects section-----------------------*/ 
+
+.projects{
+    background-color: #002333;
+    color: #fff;
+    height:70vh;
+    display:flex;
+}
+
+.projects h1{
+    margin-left: 40px;
+    margin-top: 40px;
+   font-size: x-large;
+}
+
+
+
+/*-----------------Projects section-----------------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Buttons section-----------------------*/ 
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: lightskyblue;
+    width:150px;
+    color: black;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+/*-----------------Buttons section-----------------------*/ 
