@@ -85,7 +85,7 @@ nav .logo{
 
 
 .button-container{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .button-container input{
@@ -208,7 +208,6 @@ nav .logo{
     height:130vh;
 
     
-
 }
 
 .projects h1{
@@ -221,6 +220,100 @@ nav .logo{
 
 
 /*-----------------Projects section-----------------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Footer section-----------------------*/ 
+
+footer{
+    background-color: #181a1b;
+    padding: 12px;
+}
+
+
+.footerContainer{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+
+
+}
+
+.copyright{
+    line-height: 1.5;
+    color: #fff;
+    margin-right: 7px;
+}
+
+
+footer img{
+    height:40px;
+    background-color:#fff
+}
+
+
+.email{
+    transition: transform 0.2s ease-out;
+}
+
+.email:hover{
+    transform: scale(1.1);
+}
+.github{
+    transition: transform 0.2s ease-out;
+}
+
+.github:hover{
+    transform: scale(1.1);
+}
+.linkedin{
+    transition: transform 0.2s ease-out;
+}
+
+.linkedin:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+.icons{
+    display:flex;
+    margin-left: 12px;
+    margin-right: 8px;
+}
+
+.icons div{
+    margin-right:15px;
+    margin-left:15px;
+}
+
+
+
+
+
+
+
+
+/*-----------------Footer section-----------------------*/ 
+
+
+
+
+
 
 
 
