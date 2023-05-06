@@ -172,7 +172,7 @@ nav .logo{
     flex: 0 0 300px;
     height:22rem;
     text-align: center;
-    background-color: #2e3031;;
+    background-color: #2e3031;
 }
 
 
@@ -205,8 +205,10 @@ nav .logo{
 .projects{
     background-color: #002333;
     color: #fff;
-    height:70vh;
-    display:flex;
+    height:130vh;
+
+    
+
 }
 
 .projects h1{
@@ -214,6 +216,7 @@ nav .logo{
     margin-top: 40px;
    font-size: x-large;
 }
+
 
 
 
