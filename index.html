@@ -19,9 +19,11 @@
             
             <div class="nav-items">
                 <a href="/index.html"> Home </a>
-                <a href="/aboutme.html"> About me </a>
-                <a href="/contact.html"> Contact </a>
-                <a href="/contact.html"> View website in French </a>
+                <a href="#about"> About</a>
+                <a href="#skills"> Skills</a>
+                <a href="#projects"> Projects</a>
+                <a href="/contact.html"> Change To French</a>
+            
             </div>
     
         </nav>
@@ -34,7 +36,7 @@
                 <p> Full time Electrical Engineering student with a passion <br> <span>Web development</span></p>
                 <div class="button-container">
                     <input type="submit" value= "See resume" class='resumebutton'/>
-                    <input type="submit" value= "See something" class='resumebutton'/>
+                    <input type="submit" value= "Contact me" class='resumebutton'/>
                 
                 </div>
                
@@ -43,69 +45,77 @@
         </section>  
         
         <section class="aboutme">
-            <div class="about-container"> <!-- This is a flex container-->
-                <div class="leftdivision"> <!-- This is a flex item-->
-                    <div class="aboutmewrapper">
-                        <h1> About me -------</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                    </div>
-                 
-            
-                </div>
-    
+            <h1> About Me</h1>
+
+            <span id="about"></span>
+
+            <p class="aboutp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cumque odit magnam mollitia facere ex nisi velit enim unde aspernatur ullam odio, incidunt deserunt reprehenderit, nulla numquam. Praesentium, magni molestias.
+            </p>
+
         
-                <div class="rightdivision"> <!-- This is a flex item-->
-                    
-    
-                </div>
-            </div>
-        
+
+
+           
         </section>
+
+
+
+
     
     
         <section class="skills">
-            <h1>My Skills -------</h1>
-    
-            <div class="cardscontainer">
-                <div class="card1">
-                    <h3>Languages</h3>
-                    <span>Java</span>
-                    <span>C/C++</span>
-                    <span>Python</span>
-                    <span>HTML/CSS</span>
-                    <span>VHDL</span>
-                    <span>bash</span>
+            <h1>My Skills</h1>
+            <span id="skills"></span>
+
+            <div class="skillContainer">
+                <div class="skill1"> 
+                    <img src="htmlicon.png" alt="">
+                    <h3>HTML 5</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
                 </div>
-    
-                <div class="card2">
-                    <h3>Software & Frameworks</h3>
-                    <span>Sprint</span>
-                    <span>Django</span>
-                    <span>VS Code</span>
-                    <span>Altium Designer</span>
-                    <span>Intel Quartus Prime</span>
-                
+                <div class="skill2">
+                    <img src="cssicon.png" alt="">
+                    <h3>CSS</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
                 </div>
-    
-    
-                <div class="card3">
-                    <h3>Software</h3>
-                    <span>Java</span>
-                    <span>C programming</span>
-                    <span>Python</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>VHDL</span>
+                <div class="skill3"> 
+                    <img src="JavaScripticon.png" alt="">
+                    <h3>JavaScript</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
                 </div>
-    
+                <div class="skill4"> 
+                    <img src="Javaicon.png" alt="">
+                    <h3>Java</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
+                </div>
+                <div class="skill5"> 
+                    <img src="pythonicon.png" alt="">
+                    <h3>Python</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
+                </div>
+                <div class="skill6">
+                    <img src="cicon.png" alt="">
+                    <h3>C</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
+                </div>
             </div>
-    
-    
+
+            <div class="buttonContainer">
+                <button data-language class="languagesButton" onclick="languagesMenu()" > Language </button>
+                <button data-software class="softwaresButton" onclick="softwareMenu()"> Software/Frameworks </button>
+                <button data-hardware class="hardwaresButton" onclick="hardwareMenu()"> Hardware</button>
+            </div>
+
+            
+
 
         </section>
+
     
         <section class="projects">
-            <h1>My Projects -------</h1>
+            <h1>My Projects</h1>
+            <span id="projects"></span>
            
             
 

@@ -7,16 +7,28 @@
 }
 
 
+html{
+    font-size: 62.5%; 
+    /*this is 10px*/
+
+}
+
+
 
 /*-----------------Nav section-----------------------*/ 
 nav{
-    height:80px;
+    height:9vh;
     background-color: #181a1b;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem calc((100vw - 1300px)/2);
-    padding-left: 20px; /*added this myself*/
+    padding-left: 2%;
+    padding-right: 2%;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 9999;
+    
 }  
 
 nav a, .logo{
@@ -27,12 +39,12 @@ nav a, .logo{
 
 nav a{
     letter-spacing: 2px;
+    font-size: 1.5rem;
 }
 
 nav .logo{
-    font-size: large;
     color: #e44e58;
-    font-size: 1.3em;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 4px;
 }
@@ -50,14 +62,13 @@ nav .logo{
 .hero{
     background-color: #181a1b;
     color: #fff;
-    
-    
+
+   
 }
 
 .hero-container{
-    height:95vh;
-    padding:3rem calc((100vw - 1300px)/2);
-    font-size: 1.5rem;
+    height:100vh;
+    padding-top: 5%;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
@@ -68,20 +79,19 @@ nav .logo{
     margin-top:23px;
     font-size: smaller;
     line-height: 1.6;
-    font-size: calc(14px + 0.5vw);
+    font-size:1.8rem;
     text-align: center;
     
 
 }
 
 .hero h1{
-    font-size: calc(1.2rem + 3.2vw);
+    font-size: 5rem;
 }
 
 .hero h1 span{
     color: #e44e58;
 }
-
 
 
 .button-container{
@@ -102,43 +112,37 @@ nav .logo{
 
 
 /*-----------------About me section-----------------------*/ 
-.about-container{
+.aboutme{
     background-color: #002333;
     color: #fff;
-    height:70vh;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-.leftdivision{
-    flex:1;
-}
-
-.rightdivision{
-    flex:1;
-}
-
-
-
-.leftdivision h3{
-    position: absolute;
-    top:35px;
-    left:35px;
-}
-
-.leftdivision p{
-    position: absolute;
-    top:70px;
-    left:35px;
-    width:30vw;  
-}
-
-.aboutmewrapper{
-    margin-top: 80px;
-    margin-left: 60px;
+    height:55vh;
     position: relative;
 }
+
+.aboutme h1{
+    display: inline-block;
+    margin-top: 38px;
+    margin-left: 46%;
+    font-size: 2.2rem;
+}
+
+.aboutp{
+    position: absolute;
+    height:15vh;
+    width: 60%;
+    left:20%;
+    top: 70%;
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+#about{
+    position: relative;
+    top:-55%;
+}
+
+
 
 /*-----------------About me section-----------------------*/ 
 
@@ -152,39 +156,95 @@ nav .logo{
 .skills{
     background-color: #181a1b;
     color: #fff;
-    height:80vh;
-    display: flex;
-    flex-direction: column;
+    height:90vh;
+    position: relative;
+}
+
+#skills{
+    position: relative;
+    top:-20%;
 }
 
 .skills h1{
-    margin-left: 40px;
+    margin-left: 47%;
     margin-top: 40px;
-   font-size: x-large;
+   font-size: 2.2rem;
+   display: inline-block;
+}
+.skillContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 160px 160px 160px;
+    grid-row-gap: 10%;
+    grid-column-gap: 8%;
+    padding: 3%;
+    
+
 }
 
-.cardscontainer{
+
+.skillContainer div{
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+
 }
-.cardscontainer div{
-    flex: 0 0 300px;
-    height:22rem;
+
+.skillContainer img{
+    width: 53px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+.skillContainer h3{
+    margin-bottom: 3%;
+    font-size: 2rem;;
+}
+.skillContainer p{
+    margin-bottom: 2%;
+    font-size: 1.4rem;
     text-align: center;
-    background-color: #2e3031;
 }
 
 
-.cardscontainer h3{
-    margin-top: 85px;
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    bottom: 17%;
 }
 
-.cardscontainer span{
-    display: block;
-    line-height: 0.6;
-    margin-top: 25px;
+.buttonContainer button{
+    margin: 0 1%;
+    background-color: lightskyblue;
+    width:150px;
+    color: black;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
+.buttonContainer button:hover {
+    background-color: #45a049;
+    width:150px;
+    color: black;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .buttonContainer button.languagesButton{
+    background-color: #45a049;
+  }
+
+  .buttonContainer button.softwaresButton{
+    width: fit-content;
+
+  }
 
 
 /*-----------------Skills section-----------------------*/ 
@@ -206,14 +266,18 @@ nav .logo{
     background-color: #002333;
     color: #fff;
     height:130vh;
-
-    
 }
 
 .projects h1{
-    margin-left: 40px;
+    margin-left: 45%;
     margin-top: 40px;
-   font-size: x-large;
+   font-size: 2.2rem;
+   display: inline-block;
+}
+
+#projects{
+    position: relative;
+    top:-11%;
 }
 
 
