@@ -3,7 +3,7 @@
     margin:0px;
     padding: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'Sans-serif';
-    /*border: 2px solid lime*/
+    border: 2px solid lime
 }
 
 
@@ -49,6 +49,16 @@ nav .logo{
     letter-spacing: 4px;
 }
 
+.mobileNavMenu{
+    display: none;
+}
+
+
+.hamburgerMenu{
+    cursor: pointer;
+    display: none;
+}
+
 
 /*-----------------Nav section-----------------------*/ 
 
@@ -68,7 +78,7 @@ nav .logo{
 
 .hero-container{
     height:100vh;
-    padding-top: 5%;
+    padding-top: 9%;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
@@ -77,16 +87,15 @@ nav .logo{
 
 .hero-container p{
     margin-top:23px;
-    font-size: smaller;
+
     line-height: 1.6;
     font-size:1.8rem;
     text-align: center;
-    
-
 }
 
 .hero h1{
     font-size: 5rem;
+    margin-top: 1vh;
 }
 
 .hero h1 span{
@@ -178,7 +187,6 @@ nav .logo{
     grid-row-gap: 10%;
     grid-column-gap: 8%;
     padding: 3%;
-    
 
 }
 
@@ -422,3 +430,116 @@ input[type=text], select, textarea {
     background-color: #45a049;
   }
 /*-----------------Buttons section-----------------------*/ 
+
+
+
+
+
+
+/*---------------Mobile Version-------------------------*/
+
+
+@media screen and (max-width: 767px) {
+
+
+     /*--------Mobile NavBar ---------------*/
+
+     .nav-items{
+        display: none;
+     }
+
+     nav .logo{
+        font-size: 1.7rem;
+    }
+
+    .mobileNavMenu{
+        display: inline-block;
+        color: #fff;
+        font-size: 2rem;
+        margin-right: 5%;
+    }
+
+   
+
+
+      /*--------Mobile NavBar ---------------*/
+
+
+
+
+
+
+
+
+
+
+
+      /*--------Mobile Hero section ---------------*/
+
+      
+      .hero h1{
+        margin-top: 10vh;
+        font-size: 4rem;
+    }
+
+    .hero-container p{
+        margin-top:23px;
+        line-height: 1.6;
+        font-size:1.4rem;
+        
+    }
+
+      /*--------Mobile Hero section ---------------*/
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*--------Mobile Skills Section -------*/
+
+    .skills{
+        height: 1200px;
+    }
+
+
+    .skillContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        padding:0% 3%;
+        grid-row-gap: 1.7%;
+    
+      }
+
+    .buttonContainer{
+        display: none;
+    }
+
+    /*--------Mobile Skills Section -------*/
+
+
+
+
+   
+      
+
+    
+    
+
+
+
+
+
+
+
+
+}
