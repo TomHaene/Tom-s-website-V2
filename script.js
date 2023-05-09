@@ -1,3 +1,12 @@
+function openResume(){
+  window.open('MasterResume.pdf', '_blank');
+
+  return;
+}
+
+
+
+
 
 
 
