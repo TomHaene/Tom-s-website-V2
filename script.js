@@ -4,6 +4,26 @@ function openResume(){
   return;
 }
 
+function leftArrow(){
+
+
+
+}
+
+
+function rightArrow(){
+
+
+}
+
+
+function french(){
+  
+
+
+
+
+}
 
 
 

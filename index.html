@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
     
+    <!-- How to close the side bar in VS code: CTRL B  -->
+    <!-- Also to comment a line use CTRL / this is huge -->
+
+
+
+    
 </head>
 <body>
 
@@ -24,7 +30,7 @@
                 <a href="#about"> About</a>
                 <a href="#skills"> Skills</a>
                 <a href="#projects"> Projects</a>
-                <a href="/contact.html"> Change To French</a>
+                <a href="/contact.html" onclick="french"> Change To French</a>
             
             </div>
 
@@ -122,10 +128,44 @@
         <section class="projects">
             <h1>My Projects</h1>
             <span id="projects"></span>
+           
+            
+
+
             <div class="projectsContainer">
-                <div class="project1"></div>
-                <div class="project2"></div>
-                <div class="project3"></div>
+              
+               
+
+                <div class="projectCard">
+                    <div class="cardImage1"></div>
+                    <h2>Portfolio site</h2>
+                    <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
+                    <button class="1stProject" onclick="">Read more</button>
+                </div>
+                <div class="projectCard">
+                    <div class="cardImage2"></div>
+                    <h2>Preferred shares Indicator UI</h2>
+                    <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
+                    <button class="1stProject" onclick="">Read more</button>
+                </div>
+                <div class="third">
+                    <div class="arrows">
+                        <img src="leftarrow.png" alt="" class="leftArrow" onclick="leftArrow">
+                        <img src="rightarrow.png" alt="" class="rightArrow" onclick="rightArrow">
+                        
+                    </div>
+                    <div class="projectCard">
+                        <div class="cardImage3"></div>
+                        <h2>Tom Riddle diary AI</h2>
+                        <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
+                        <button class="1stProject" onclick="">Read more</button>
+                    </div>     
+
+                </div>
+                
+                
+                
+                
             </div>
            
             

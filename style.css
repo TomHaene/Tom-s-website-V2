@@ -3,7 +3,7 @@
     margin:0px;
     padding: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'Sans-serif';
-    border: 2px solid lime
+    /* border: 2px solid lime  */
 }
 
 
@@ -168,13 +168,13 @@ nav .logo{
 .skills{
     background-color: #181a1b;
     color: #fff;
-    height:90vh;
+    height:100vh;
     position: relative;
 }
 
 #skills{
     position: relative;
-    top:-20%;
+    top:-6%;
 }
 
 .skills h1{
@@ -222,6 +222,7 @@ nav .logo{
 
 .buttonContainer{
     display: flex;
+    margin-top: 40px;
     flex-direction: row;
     justify-content: center;
     position: relative;
@@ -279,14 +280,15 @@ nav .logo{
 .projects{
     background-color: #002333;
     color: #fff;
-    height:130vh;
+    height:95vh;
+    padding-top: 30px;
 }
 
 .projects h1{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 40px;
+    margin-top: 10px;
    font-size: 2.2rem;
    display: inline-block;
 }
@@ -295,6 +297,136 @@ nav .logo{
     position: relative;
     top:-11%;
 }
+
+
+.projectsContainer{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+
+}
+
+
+.projectCard{
+    width:270px;
+    height: 370px;
+    margin: 10px;
+    margin-top: 70px;
+    border-radius: 15px;
+    position: relative;
+    background-color:#181a1b;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectCard:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+
+}
+
+.projectCard div{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0 ;
+
+}
+
+.projectCard h2{
+    padding: 10px;
+
+}
+
+.projectCard p{
+    padding: 10px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+.cardImage1{
+    background-image: url(websitepic.png);
+
+}
+
+.cardImage2{
+    background-image: url(stock.jpg);
+
+}
+
+.cardImage3{
+    background-image: url(riddle.webp);
+
+}
+
+.projectCard button{
+    background-color:lightskyblue;
+    padding: 12px 15px;
+    text-align: center;
+    display: block;
+    margin: 12px 50px;
+    
+}
+
+.projectCard button:hover{
+    cursor: pointer;
+    background-color: #45a049;
+}
+
+
+.third{
+    position: relative;
+
+}
+
+.arrows{
+    height: 50px;
+    width: 100px;
+   position: absolute;
+   right: 5%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.arrows img{
+    height:40px;
+    padding: 5px;
+    margin: 0 3px;
+    width:auto;
+    background-color: #e44e58;
+}
+
+.leftArrow:hover{
+    cursor: pointer;
+}
+
+.rightArrow:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -351,6 +483,7 @@ footer img{
 
 .email:hover{
     transform: scale(1.1);
+    transition: all 0.5s ease;
 }
 .github{
     transition: transform 0.2s ease-out;
@@ -358,6 +491,7 @@ footer img{
 
 .github:hover{
     transform: scale(1.1);
+    transition: all 0.5s ease;
 }
 .linkedin{
     transition: transform 0.2s ease-out;
@@ -365,6 +499,7 @@ footer img{
 
 .linkedin:hover{
     transform: scale(1.1);
+    transition: all 0.5s ease;
 }
 
 
@@ -568,6 +703,32 @@ input[type=text], select, textarea {
 
 
 
+
+
+
+
+
+    /*--------Mobile Projects Section -------*/
+
+
+    .projects{
+        height: 183vh
+    }
+
+    .arrows{
+        display: none;
+    }
+
+    .projectCard{
+        margin-top:20px;
+    }
+
+
+
+
+
+
+    /*--------Mobile Projects Section -------*/
    
       
 
