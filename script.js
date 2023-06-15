@@ -93,7 +93,7 @@ function softwareMenu(){
   document.querySelector('.skill5 h3').textContent = "Intel Quartus Prime";
   document.querySelector('.skill5 img').src = "quartusicon.png";
   //------------------------------------------------------------//
-  document.querySelector('.skill6 h3').textContent = "Spring";
+  document.querySelector('.skill6 h3').textContent = "Django";
   document.querySelector('.skill6 img').src = "springicon.svg";
 
   return;
@@ -121,7 +121,7 @@ function hardwareMenu(){
   document.querySelector('.skill1 h3').textContent = "Arduino";
   document.querySelector('.skill1 img').src = "arduinoicon.png";
   //------------------------------------------------------------//
-  document.querySelector('.skill2 h3').textContent = "Android Studio";
+  document.querySelector('.skill2 h3').textContent = "Soldering";
   document.querySelector('.skill2 img').src = "androidstudioicon.png";
   //------------------------------------------------------------//
   document.querySelector('.skill3 h3').textContent = "Altium Designer";
