@@ -8,7 +8,14 @@
 
     <title>Tom's website V2</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+ 
+
     <script src="./script.js"></script>
+
     
     <!-- How to close the side bar in VS code: CTRL B  -->
     <!-- Also to comment a line use CTRL / this is huge -->
@@ -54,12 +61,24 @@
         </section>  
         
         <section class="aboutme">
+
+            
             <h1> About Me</h1>
 
             <span id="about"></span>
 
+
+            <img src="linkedinimg.svg" class="about_me_image">
+
+
             <p class="aboutp">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cumque odit magnam mollitia facere ex nisi velit enim unde aspernatur ullam odio, incidunt deserunt reprehenderit, nulla numquam. Praesentium, magni molestias.
+                Hello, I am Thomas, a passionate and results-driven apsiring engineering student, with a diverse background in all things tech, ranging from software to hardware. I pride myself as an active learner, who always enjoys the process of learning new skills.
+
+                My journey began with an IB diploma in Abu Dhabi, UAE, where I discovered my interest in Physics. This then led me to McGill university in Montreal, where I am now entering my third year in an electrical undergraduate engineering degree. Over the past year I've had the oppoturnity to work on a variety of projects, most of which have been out of interest outside of the classroom. These have allowed me to expand my skillset beyond just curriciulum-based content, which has opened new doors for me in terms of career oppoturnities and projects to
+
+                I am excited to collaborate with like-minded individuals and organizations who share the same commitment to creativity and excellence. Let's create something remarkable together.
+                
+                
             </p>
 
         
@@ -68,11 +87,6 @@
            
         </section>
 
-
-
-
-    
-    
         <section class="skills">
             <h1>My Skills</h1>
             <span id="skills"></span>
@@ -89,8 +103,8 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
                 </div>
                 <div class="skill3"> 
-                    <img src="JavaScripticon.png" alt="">
-                    <h3>JavaScript</h3>
+                    <img src="Assembly.png" alt="" style="border-radius: 15px;">
+                    <h3>Assembly Language</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
                 </div>
                 <div class="skill4"> 
@@ -111,7 +125,7 @@
             </div>
 
             <div class="buttonContainer">
-                <button data-language class="languagesButton" onclick="languagesMenu()" > Language </button>
+                <button data-language class="languagesButton" onclick="languagesMenu()" > Languages </button>
                 <button data-software class="softwaresButton" onclick="softwareMenu()"> Software</button>
                 <button data-hardware class="hardwaresButton" onclick="hardwareMenu()"> Hardware</button>
             </div>
@@ -127,41 +141,77 @@
             <span id="projects"></span>
            
             
+               <div class="swiper mySwiper projects_container ">
 
 
-            <div class="projectsContainer">
-              
-               
+                    <div class="swiper-wrapper">
 
-                <div class="projectCard">
-                    <div class="cardImage1"></div>
-                    <h2>Portfolio site</h2>
-                    <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
-                    <button class="1stProject" onclick="window.location.href ='portfolio_site_details.html'">Read more</button>
-                </div>
-                <div class="projectCard">
-                    <div class="cardImage2"></div>
-                    <h2>"Teach yourself" app </h2>
-                    <p>Built for the Android play store. The app allows users to create categories and save audio and video recordings in one place.</p>
-                    <button class="1stProject" onclick="window.location.href = 'Teach_yourself.html'">Read more</button>
-                </div>
-                <div class="third">
-                    <div class="arrows">
-                        <img src="leftarrow.png" alt="" class="leftArrow" onclick="leftArrow">
-                        <img src="rightarrow.png" alt="" class="rightArrow" onclick="rightArrow">
+                      <div class="swiper-slide">
+
+                        <div class="projectCard">
+                            <div class="cardImage1"></div>
+                            <h2>Portfolio site</h2>
+                            <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
+                            <button class="1stProject" onclick="window.location.href ='portfolio_site_details.html'">Read more</button>
+                        </div>    
+                      </div>
+
+                      <div class="swiper-slide">
+
+                        <div class="projectCard">
+                            <div class="cardImage2"></div>
+                            <h2>"Teach yourself" app </h2>
+                            <p>Built for the Android play store. The app allows users to create categories and save audio and video recordings in one place.</p>
+                            <button class="1stProject" onclick="window.location.href = 'Teach_yourself.html'">Read more</button>
+                        </div>
+
+                    
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="projectCard">
+                            <div class="cardImage3"></div>
+                            <h2>Python NBA API project</h2>
+                            <p>This project taught me the Django back-end framework, which I used to handle network requests and perform back-end business logic</p>
+                            <button class="1stProject" onclick="">Read more</button>
+                        </div>     
                         
-                    </div>
-                    <div class="projectCard">
-                        <div class="cardImage3"></div>
-                        <h2>Python NBA API project</h2>
-                        <p>This project taught me the Django back-end framework, which I used to handle network requests and perform back-end business logic</p>
-                        <button class="1stProject" onclick="">Read more</button>
-                    </div>     
+                    
+                      </div>
+                      <div class="swiper-slide">
 
-                </div>
-                
-                
-                
+                        <div class="projectCard">
+                            <div class="cardImage1"></div>
+                            <h2>Portfolio site</h2>
+                            <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
+                            <button class="1stProject" onclick="window.location.href ='portfolio_site_details.html'">Read more</button>
+                        </div> 
+
+
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="projectCard">
+                            <div class="cardImage1"></div>
+                            <h2>Portfolio site</h2>
+                            <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
+                            <button class="1stProject" onclick="window.location.href ='portfolio_site_details.html'">Read more</button>
+                        </div> 
+
+                      </div>
+
+
+                      
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    
+                  </div>
+
+
+
+
                 
             </div>
            
@@ -207,6 +257,56 @@
 
     
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+   
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: -45,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    
+    </script>
+
+      <script>
+        // JavaScript code that executes when the media query is active
+        function handleMediaQueryChange(mediaQuery) {
+          if (mediaQuery.matches) {
+            console.log("Media query is active!");
+            swiper.params.slidesPerView = 1;
+            swiper.params.slidesPerGroup = 1;
+
+            // Add your JavaScript code here
+          } else {
+            console.log("Media query is not active!");
+            swiper.params.slidesPerView = 3;
+           
+
+          }
+        }
+
+        
+    
+        const mediaQuery = window.matchMedia("(max-width: 900px)");
+        handleMediaQueryChange(mediaQuery); // Initial check
+    
+        mediaQuery.addEventListener("change", handleMediaQueryChange); // Listen for changes
+      </script>
+
+
 
 
 </html>

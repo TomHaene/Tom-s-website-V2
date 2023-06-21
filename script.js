@@ -22,12 +22,7 @@ function french(){
 
 
 
-
 }
-
-
-
-
 
 
 
@@ -50,8 +45,8 @@ function languagesMenu(){
   document.querySelector('.skill2 h3').textContent = "CSS";
   document.querySelector('.skill2 img').src = "cssicon.png";
   //------------------------------------------------------------//
-  document.querySelector('.skill3 h3').textContent = "JavaScript";
-  document.querySelector('.skill3 img').src = "JavaScripticon.png";
+  document.querySelector('.skill3 h3').textContent = "";
+  document.querySelector('.skill3 img').src = "";
   //------------------------------------------------------------//
   document.querySelector('.skill4 h3').textContent = "Java";
   document.querySelector('.skill4 img').src = "javaicon.png";
