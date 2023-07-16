@@ -3,7 +3,7 @@
     margin:0px;
     padding: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'Sans-serif';
-    /* border: 2px solid lime  */
+    /* border: 2px solid hotpink; */
 }
 
 
@@ -124,7 +124,7 @@ nav .logo{
 .aboutme{
     background-color: #002333;
     color: #fff;
-    height:90vh;
+    height:96vh;
     position: relative;
 }
 
@@ -140,17 +140,22 @@ nav .logo{
 .about_me_image{
     position: absolute;
     left: 50%;
+    
     transform: translateX(-50%);
     width: 11%;
     min-width: 90px;
     top: 90px;
+    border-radius: 50%; /* Make the image circular */
+    
+  
 }
+
 
 
 
 .aboutp{
     position: absolute;
-    height:30vh;
+    height: max-content;
     width: 70%;
     left: 50%;
     line-height: 30px;
@@ -163,7 +168,7 @@ nav .logo{
 
 #about{
     position: relative;
-    top:-55%;
+    top:-5%;
 }
 
 
@@ -300,7 +305,7 @@ nav .logo{
 .swiper{
     width: 94vw;
     /* max-width: 930px; */
-    
+    margin-top: 5%;
     height: 520px;
 
 }
@@ -333,7 +338,7 @@ nav .logo{
     min-width: 230px;
     height: 370px;
     margin: 10px;
-    margin-top: 70px;
+    margin-top: 60px;
     border-radius: 15px;
     position: relative;
     margin-inline: auto;
@@ -372,18 +377,27 @@ nav .logo{
 
 .cardImage1{
     background-image: url(websitepic.png);
-    
+    background-position: center;
 }
 
 .cardImage2{
-    background-image: url(stock.jpg);
+    background-image: url(robotics2.png);
+    background-position: center;
+
 
 }
 
 .cardImage3{
-    background-image: url(riddle.webp);
+    background-image: url();
 
 }
+
+.cardImage4{
+    background-image: url(JTY.png);
+    background-position: center -47px;
+}
+
+
 
 .projectCard button{
     background-color:lightskyblue;
@@ -405,54 +419,73 @@ nav .logo{
 
 }
 
-.arrows{
-    height: 50px;
-    width: 100px;
-   position: absolute;
-   right: 5%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
 
-}
-.arrows img{
-    height:40px;
-    padding: 5px;
-    margin: 0 3px;
-    width:auto;
-    background-color: #e44e58;
-}
-
-.leftArrow:hover{
-    cursor: pointer;
-}
-
-.rightArrow:hover{
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-right: 23vw;
+    margin-left: 23vw;
+  }
 
 
 /*-----------------Projects section-----------------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Contact section-----------------------*/ 
+
+.contact{
+    height: auto;
+    background-color: #181a1b;
+    padding: 30px;
+    font-size: 1.6rem;
+    color: #ccc;
+}
+.contact .form-group{
+    margin-top: 10px;
+
+}
+
+
+.contact h1{
+
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/*-----------------Contact section-----------------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -628,14 +661,17 @@ input[type=text], select, textarea {
         margin-right: 5%;
     }
 
+
+
+    .dropdown-toggle{
+        min-width: 95px; 
+        min-height: 30px;
+    }
+    
    
 
 
       /*--------Mobile NavBar ---------------*/
-
-
-
-
 
 
 
@@ -667,16 +703,29 @@ input[type=text], select, textarea {
       
       
 
+ /*--------Mobile Skills Section -------*/
+
+
+
+    .aboutme{
+        height: 900px;
+    }
+
+
 
 
     .aboutp{
         width:75%;
         left: 50%;
+        top:26%;
         transform: translateX(-50%);
     }
 
 
 
+
+
+ /*--------Mobile Skills Section -------*/
 
 
 
@@ -738,8 +787,16 @@ input[type=text], select, textarea {
 
 
 
+    .projects{
+        height: 600px;
+    }
+
+
+
     .projects_container{
-        width: 60vw;
+        width: 90vw;
+        
+        
        
     }
 
@@ -750,6 +807,14 @@ input[type=text], select, textarea {
 
     
 
+
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      margin-right: 9.5vw;
+      margin-left: 9.5vw;
+    }
+  
 
 
 

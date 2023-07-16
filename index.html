@@ -5,14 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <title>Tom's website V2</title>
     <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />
- 
+    
 
     <script src="./script.js"></script>
 
@@ -39,7 +34,20 @@
             </div>
 
 
-            <span class="mobileNavMenu">Menu</span>
+            <span class="mobileNavMenu"><div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.4rem; background-color: lightskyblue;">
+                  Menu
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="/index.html">Home</a></li>
+                  <li><a class="dropdown-item" href="#about">About</a></li>
+                  <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                  <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                  <li><a class="dropdown-item" href="#skills">Contact me</a></li>
+                  <li><a class="dropdown-item" onclick="french" href="/index.html">Change to French</a></li>
+                </ul>
+              </div></span>
             
     
         </nav>
@@ -68,7 +76,7 @@
             <span id="about"></span>
 
 
-            <img src="linkedinimg.svg" class="about_me_image">
+            <img src="GradPic.jpg" class="about_me_image">
 
 
             <p class="aboutp">
@@ -95,32 +103,32 @@
                 <div class="skill1"> 
                     <img src="htmlicon.png" alt="">
                     <h3>HTML 5</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
+                    <p>Initially learned through the free online course: The Odin Project, regular practice it through personal projects.</p>
                 </div>
                 <div class="skill2">
                     <img src="cssicon.png" alt="">
                     <h3>CSS</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
+                    <p>Initially learned through the free online course: The Odin Project, regular practice it through personal projects.</p>
                 </div>
                 <div class="skill3"> 
                     <img src="Assembly.png" alt="" style="border-radius: 15px;">
                     <h3>Assembly Language</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
+                    <p>Learned this language through a McGill course where we used assembly language to program single board computers</p>
                 </div>
                 <div class="skill4"> 
                     <img src="javaicon.png" alt="javaicon">
                     <h3>Java</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
+                    <p>Learned this lanaguage through a McGill course, regularly practice it in Android app development.</p>
                 </div>
                 <div class="skill5"> 
                     <img src="pythonicon.png" alt="">
                     <h3>Python</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
+                    <p>Learned this language through a McGill course. Regularly practice it through personal projects.</p>
                 </div>
                 <div class="skill6">
                     <img src="cicon.png" alt="">
                     <h3>C</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius</p>
+                    <p>Learned this language through a McGill course. Regularly practice it in McGill robotics outside of class.</p>
                 </div>
             </div>
 
@@ -139,85 +147,86 @@
         <section class="projects">
             <h1>My Projects</h1>
             <span id="projects"></span>
-           
-            
-               <div class="swiper mySwiper projects_container ">
 
-
-                    <div class="swiper-wrapper">
-
-                      <div class="swiper-slide">
-
-                        <div class="projectCard">
-                            <div class="cardImage1"></div>
-                            <h2>Portfolio site</h2>
-                            <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
-                            <button class="1stProject" onclick="window.location.href ='portfolio_site_details.html'">Read more</button>
-                        </div>    
-                      </div>
-
-                      <div class="swiper-slide">
-
-                        <div class="projectCard">
-                            <div class="cardImage2"></div>
-                            <h2>"Teach yourself" app </h2>
-                            <p>Built for the Android play store. The app allows users to create categories and save audio and video recordings in one place.</p>
-                            <button class="1stProject" onclick="window.location.href = 'Teach_yourself.html'">Read more</button>
-                        </div>
-
-                    
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="projectCard">
-                            <div class="cardImage3"></div>
-                            <h2>Python NBA API project</h2>
-                            <p>This project taught me the Django back-end framework, which I used to handle network requests and perform back-end business logic</p>
-                            <button class="1stProject" onclick="">Read more</button>
-                        </div>     
-                        
-                    
-                      </div>
-                      <div class="swiper-slide">
-
-                        <div class="projectCard">
-                            <div class="cardImage1"></div>
-                            <h2>Portfolio site</h2>
-                            <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
-                            <button class="1stProject" onclick="window.location.href ='portfolio_site_details.html'">Read more</button>
-                        </div> 
-
-
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="projectCard">
-                            <div class="cardImage1"></div>
-                            <h2>Portfolio site</h2>
-                            <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
-                            <button class="1stProject" onclick="window.location.href ='portfolio_site_details.html'">Read more</button>
-                        </div> 
-
-                      </div>
-
-
-                      
-
-                    </div>
-
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                    
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="margin-top: 5%;">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="projectCard">
+                        <div class="cardImage1"></div>
+                        <h2>Portfolio site</h2>
+                        <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
+                        <button class="1stProject" onclick="window.location.href ='portfolio_site_details.html'">Read more</button>
+                    </div>   
                   </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="projectCard">
+                        <div class="cardImage3"></div>
+                        <h2>Python NBA API project</h2>
+                        <p>This project taught me the Django back-end framework, which I used to handle network requests and perform back-end business logic</p>
+                        <button class="1stProject" onclick="">Read more</button>
+                    </div>    
+                  </div>
+                  <!-- <div class="carousel-item">
+                       //Add a new item here 
+                  </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        
 
 
-
-
-                
-            </div>
+            
            
             
 
         
+        </section>
+
+        <section class="contact">
+
+            <h1>Contact me</h1>
+
+            <form onsubmit="sendEmail(); reset()">
+                <div class="form-group">
+                    <label for="">Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter your email" required id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Your name</label>
+                    <input type="name" class="form-control" placeholder="Enter your name" id="name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="">Message</label>
+                    <br>
+                    <textarea name="" cols="30" rows="3" placeholder="Enter your message" required id="message"></textarea>
+        
+                </div>
+
+                <br>
+
+
+                <button type="submit" class="btn btn-primary"> Submit </button>
+
+
+
+
+            </form>
+
+
+
+
+
+
         </section>
     
 
@@ -255,57 +264,30 @@
     </footer>
 
 
-    
-</body>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+ <script>
    
 
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: -45,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+ 
+
+
+
+ </script>
+
+
+
     
-    </script>
+</body>
 
-      <script>
-        // JavaScript code that executes when the media query is active
-        function handleMediaQueryChange(mediaQuery) {
-          if (mediaQuery.matches) {
-            console.log("Media query is active!");
-            swiper.params.slidesPerView = 1;
-            swiper.params.slidesPerGroup = 1;
-
-            // Add your JavaScript code here
-          } else {
-            console.log("Media query is not active!");
-            swiper.params.slidesPerView = 3;
-           
-
-          }
-        }
-
-        
     
-        const mediaQuery = window.matchMedia("(max-width: 900px)");
-        handleMediaQueryChange(mediaQuery); // Initial check
-    
-        mediaQuery.addEventListener("change", handleMediaQueryChange); // Listen for changes
-      </script>
 
+      
 
 
 
