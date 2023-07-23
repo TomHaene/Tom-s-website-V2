@@ -44,7 +44,7 @@
                   <li><a class="dropdown-item" href="#about">About</a></li>
                   <li><a class="dropdown-item" href="#skills">Skills</a></li>
                   <li><a class="dropdown-item" href="#projects">Projects</a></li>
-                  <li><a class="dropdown-item" href="#skills">Contact me</a></li>
+                  <li><a class="dropdown-item" href="#contact">Contact me</a></li>
                   <li><a class="dropdown-item" onclick="french" href="/index.html">Change to French</a></li>
                 </ul>
               </div></span>
@@ -59,8 +59,8 @@
                 <h1> Hi, I'm <span>Thomas Haene</span></h1>
                 <p> Full time Electrical Engineering student with a passion for <br> <span>Software Development</span></p>
                 <div class="button-container">
-                    <input type="submit" value= "See resume" class='resumebutton' onclick="openResume()"/>
-                    <input type="submit" value= "Contact me" class='resumebutton'/>
+                    <a href="MasterResume.pdf" target="_blank" ><input type="submit" value= "See resume" class='resumebutton'/></a>
+                    <a href="#contact"><input type="submit" value= "Contact me" class='contactbutton'/></a>
                 
                 </div>
                
@@ -155,15 +155,15 @@
                         <div class="cardImage1"></div>
                         <h2>Portfolio site</h2>
                         <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
-                        <button class="1stProject" onclick="window.location.href ='portfolio_site_details.html'">Read more</button>
+                        <a href="https://github.com/TomHaene/Tom-s-website-V2" target="_blank"><button>View source code</button></a>
                     </div>   
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
                     <div class="projectCard">
-                        <div class="cardImage3"></div>
+                        <div class="cardImage2"></div>
                         <h2>Python NBA API project</h2>
-                        <p>This project taught me the Django back-end framework, which I used to handle network requests and perform back-end business logic</p>
-                        <button class="1stProject" onclick="">Read more</button>
+                        <p>This project taught me the Django back-end framework, which I used in combination with python back-end business logic.</p>
+                        <a href="http://tomhaene.pythonanywhere.com/" target="_blank"><button>See the project</button></a>
                     </div>    
                   </div>
                   <!-- <div class="carousel-item">
@@ -194,12 +194,16 @@
 
             <h1>Contact me</h1>
 
-            <form onsubmit="sendEmail(); reset()">
+            <span id="contact"></span>
+
+            <form action="https://formsubmit.co/tom@haene.org" method="POST">
+                <input type="hidden" name="_subject" value="New submission!">
                 <div class="form-group">
                     <label for="">Email Address</label>
                     <input type="email" class="form-control" placeholder="Enter your email" required id="email">
                 </div>
-
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                <input type="hidden" name="_captcha" value="false">
                 <div class="form-group">
                     <label for="">Your name</label>
                     <input type="name" class="form-control" placeholder="Enter your name" id="name">
@@ -208,12 +212,11 @@
                 <div class="form-group">
                     <label for="">Message</label>
                     <br>
-                    <textarea name="" cols="30" rows="3" placeholder="Enter your message" required id="message"></textarea>
+                    <textarea name="message" cols="30" rows="3" placeholder="Enter your message" required id="message"></textarea>
         
                 </div>
 
                 <br>
-
 
                 <button type="submit" class="btn btn-primary"> Submit </button>
 

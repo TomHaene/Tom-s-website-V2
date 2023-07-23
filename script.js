@@ -150,23 +150,7 @@ function hardwareMenu(){
 
 }
 
-function sendEmail(){
 
-  Email.send({
-    SecureToken: "f701ebf2-5d2a-4c3b-9a26-0905b8ccd843",
-    To : 'tom@haene.org',
-    From : document.getElementById("email").value,
-    Subject : "New Contact Form Message",
-    Body : "Name: " + document.getElementById("name").value
-        + "<br> Email: " + document.getElementById("email").value
-        + "<br> Message: " + document.getElementById("message").value
-}).then(
-  message => alert(message)
-);
-
-
-
-}
 
 
 

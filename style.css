@@ -342,7 +342,6 @@ nav .logo{
     border-radius: 15px;
     position: relative;
     margin-inline: auto;
-
     background-color:#181a1b;
     display: flex;
     flex-direction: column;
@@ -381,10 +380,8 @@ nav .logo{
 }
 
 .cardImage2{
-    background-image: url(robotics2.png);
+    background-image: url(Luka.png);
     background-position: center;
-
-
 }
 
 .cardImage3{
@@ -397,14 +394,20 @@ nav .logo{
     background-position: center -47px;
 }
 
+.projectCard a{
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-inline: auto;
+
+}
 
 
 .projectCard button{
     background-color:lightskyblue;
-    padding: 12px 15px;
     text-align: center;
     display: block;
-    margin: 12px 50px;
+    padding: 11px 15px;
     
 }
 
@@ -451,6 +454,11 @@ nav .logo{
     padding: 30px;
     font-size: 1.6rem;
     color: #ccc;
+}
+
+#contact{
+    position: relative;
+    top:-11%;
 }
 .contact .form-group{
     margin-top: 10px;
@@ -699,6 +707,9 @@ input[type=text], select, textarea {
         
     }
 
+    .contactbutton{
+        display: none;
+    }
       /*--------Mobile Hero section ---------------*/
       
       
