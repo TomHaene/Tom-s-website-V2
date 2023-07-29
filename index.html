@@ -59,9 +59,8 @@
                 <h1> Hi, I'm <span>Thomas Haene</span></h1>
                 <p> Full time Electrical Engineering student with a passion for <br> <span>Software Development</span></p>
                 <div class="button-container">
-                    <a href="MasterResume.pdf" target="_blank" ><input type="submit" value= "See resume" class='resumebutton'/></a>
-                    <a href="#contact"><input type="submit" value= "Contact me" class='contactbutton'/></a>
-                
+                    <a href="MasterResume.pdf" target="_blank"><button> See Resume</button></a>
+                    <a href="#contact" class="contactbutton"><button> Contact Me </button></a>
                 </div>
                
             
@@ -200,13 +199,14 @@
                 <input type="hidden" name="_subject" value="New submission!">
                 <div class="form-group">
                     <label for="">Email Address</label>
-                    <input type="email" class="form-control" placeholder="Enter your email" required id="email">
+                    <input type="email" name="email" class="form-control" placeholder="Enter your email" required id="email">
                 </div>
-                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                
+                
                 <input type="hidden" name="_captcha" value="false">
                 <div class="form-group">
                     <label for="">Your name</label>
-                    <input type="name" class="form-control" placeholder="Enter your name" id="name">
+                    <input type="name" name="name" class="form-control" placeholder="Enter your name" id="name">
                 </div>
                 
                 <div class="form-group">
@@ -218,7 +218,7 @@
 
                 <br>
 
-                <button type="submit" class="btn btn-primary"> Submit </button>
+                <button type="submit" class="btn btn-large btn-primary"> Submit </button>
 
 
 

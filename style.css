@@ -102,14 +102,41 @@ nav .logo{
     color: #e44e58;
 }
 
-
 .button-container{
+    display: flex;
     margin-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+   
 }
 
-.button-container input{
-    margin: 0 10px 0 10px;;
+
+
+
+.button-container a{
+    margin: 0 10px 0 10px;
+    
+ 
 }
+
+.button-container button{
+     margin: 0 1%;
+    background-color: lightskyblue;
+    width:150px;
+    color: black;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+
+
+}
+
+
+
+
 
 /*---------------- Hero section-----------------------*/ 
 
@@ -146,8 +173,7 @@ nav .logo{
     min-width: 90px;
     top: 90px;
     border-radius: 50%; /* Make the image circular */
-    
-  
+
 }
 
 
@@ -395,7 +421,7 @@ nav .logo{
 }
 
 .projectCard a{
-    width: fit-content;
+    width: 125px;
     text-decoration: none;
     font-size: 1.1rem;
     margin-inline: auto;
@@ -709,6 +735,7 @@ input[type=text], select, textarea {
 
     .contactbutton{
         display: none;
+
     }
       /*--------Mobile Hero section ---------------*/
       
