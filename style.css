@@ -42,6 +42,11 @@ nav a{
     font-size: 1.5rem;
 }
 
+nav a:hover{
+    color:#e44e58;
+}
+
+
 nav .logo{
     color: #e44e58;
     font-size: 2rem;
@@ -121,7 +126,7 @@ nav .logo{
 
 .button-container button{
      margin: 0 1%;
-    background-color: lightskyblue;
+    background-color: #4EE4DA;
     width:150px;
     color: black;
     font-size: 17px;
@@ -129,9 +134,12 @@ nav .logo{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    
 
+}
 
+.button-container button:hover{
+    cursor: pointer;
+    background-color: #e44e58;
 }
 
 
@@ -270,11 +278,12 @@ nav .logo{
     justify-content: center;
     position: relative;
     bottom: 17%;
+    
 }
 
 .buttonContainer button{
     margin: 0 1%;
-    background-color: lightskyblue;
+    background-color: #4EE4DA;
     width:150px;
     color: black;
     font-size: 17px;
@@ -285,7 +294,7 @@ nav .logo{
 }
 
 .buttonContainer button:hover {
-    background-color: #45a049;
+    background-color: #e44e58;
     width:150px;
     color: black;
     font-size: 17px;
@@ -296,7 +305,7 @@ nav .logo{
   }
 
   .buttonContainer button.languagesButton{
-    background-color: #45a049;
+    background-color: #e44e58;
   }
 
   .buttonContainer button.softwaresButton{
@@ -430,7 +439,7 @@ nav .logo{
 
 
 .projectCard button{
-    background-color:lightskyblue;
+    background-color:#4EE4DA;
     text-align: center;
     display: block;
     padding: 11px 15px;
@@ -439,7 +448,7 @@ nav .logo{
 
 .projectCard button:hover{
     cursor: pointer;
-    background-color: #45a049;
+    background-color: #e44e58;
 }
 
 
@@ -498,6 +507,13 @@ nav .logo{
 }
 
 
+.contact button{
+    background-color: #4EE4DA;
+}
+.contact button:hover{
+    background-color: #e44e58;
+
+}
 
 
 
@@ -751,13 +767,16 @@ input[type=text], select, textarea {
 
 
 
-
     .aboutp{
         width:75%;
         left: 50%;
         top:26%;
         transform: translateX(-50%);
     }
+
+    
+
+    
 
 
 
@@ -789,7 +808,7 @@ input[type=text], select, textarea {
       .buttonContainer{
         position: absolute;
         width: 90%;
-        bottom: 89%;
+        bottom: 90%;
         left:50%;
         transform:translate(-50%);
 
@@ -823,7 +842,10 @@ input[type=text], select, textarea {
 
     /*--------Mobile Projects Section -------*/
 
-
+    #projects{
+        position: relative;
+        top:-22%;
+    }
 
     .projects{
         height: 600px;
